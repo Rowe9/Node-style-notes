@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>客户端的网站</h2>
+  </body>
+  <script>
+    // 在浏览器中通过js设置cookie（在开发中很少使用）
+    // 没有设置max-age的时候是一个内存cookie
+    // 设置了max-age或者设置max-age为0都能成为硬盘cookie
+
+    // max-age得设置秒钟，比如一年为60*60*24*365
+    document.cookie = "name=why;max-age=30;";
+    document.cookie = "age=why;max-age=30;";
+  </script>
+</html>
